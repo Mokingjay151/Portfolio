@@ -1,0 +1,93 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  position: relative;
+}
+
+header button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+nav {
+  background: #555;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: #444;
+}
+
+section {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.project {
+  background: white;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #333;
+  color: white;
+}
+
+/* Dark Mode */
+.dark {
+  background: #222;
+  color: white;
+}
+
+.dark header {
+  background: #111;
+}
+
+.dark nav {
+  background: #000;
+}
+
+.dark nav a {
+  color: #ddd;
+}
+
+.dark .project {
+  background: #333;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+}
